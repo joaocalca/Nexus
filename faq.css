@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #8AB5FB;
+    --cor1: #3E86FA;
+    --cor2: #326BC7;
+    --cor3: #475D80;
+    --cor4: #1F427A;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Zen Dots', cursive;
+    --fonte-titulos: 'Dela Gothic One', cursive;
+}
+
+body {
+    background-image: url('imagens/background-faleconosco.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2), var(--cor1));
+    min-height: 120px;
+    text-align: center;
+    background-color: var(--cor4);
+    padding-top: 25px;
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 80px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+  
+li a, .dropbtn {
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--cor0);
+    color: var(--cor2);
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: var(--cor0); color: white;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    max-width: 70%;
+    min-width: 30%;
+    min-height: 900px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 7px black;
+}
+
+main h2 {
+    color: white;
+    font: bold 2.8em var(--fonte-titulos);
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2), var(--cor0));
+    text-shadow: 3px 3px 7px black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+main h3 {
+    font: bold 1.5em var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 40px 40px 5px 40px;
+    background-color: var(--cor4);
+    border-radius: 5px;
+}
+
+main p{
+    font: normal 1em var(--fonte-padrao);
+    color: black;
+    text-align: justify;
+    padding: 10px 15px;
+    margin: 0px 70px;
+    line-height: 30px;
+}
+
+footer {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2), var(--cor1));
+    box-shadow: 0px 0px 10px black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    margin-top: 80px;
+}
+
+.margin-rodape {
+    margin-left: 20%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 60%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between 0;
+}
+
+.texto-rodape {
+    text-align: center;
+    font: bold 1.2em var(--fonte-padrao);
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.rodape-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    margin-top: 25px;
+    display: inline-block;
+    width: 40%;  
+    text-align: left;
+}
+
+.links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    max-width: 50%;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between 0;
+}
+
+.icones-redes {
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.icones-redes img:hover {
+    background-color: rgb(216, 216, 0);
+    border-radius: 6px;
+}

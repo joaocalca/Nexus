@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="registro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Registre-se</h1>
+        <p>Caso já possua uma conta <a href="login.html">clique aqui</a> e efetue o login</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nossa_empresa.html" target="_self" rel="next">Nossa Empresa</a></li>
+            <li><a href="projetos_valores.html" target="self" rel="prev">Projetos e valores</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Contato</a>
+                <div class="dropdown-content">
+                  <a href="fale_conosco.html">Fale Conosco</a>
+                  <a href="faq.html">FAQ</a>
+                </div>
+              </li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <form class="form-contact">
+                <fieldset>
+                    <div class="campo">
+                        <label for="nome"><strong>Nome Completo</strong></label>
+                        <input type="text" class="form-contact-input" name="nome" id="nome" required>
+                    </div>
+                    <div class="inline-block">
+                        <div class="data">
+                            <label for="nascimento"><strong>Data de Nascimento</strong></label>
+                            <input type="date" class="form-contact-data" name="nascimento" id="nascimento" required>
+                        </div>
+                        <div class="CPF">
+                            <label for="CPF"><strong>CPF</strong></label>
+                            <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="xxx.xxx.xxx-xx" maxlength="14"
+                            class="form-contact-cpf" name="CPF" id="CPF" required>
+                        </div>
+                    </div>
+                    <div class="inline-block">
+                        <div class="CEP">
+                            <label for="CEP"><strong>CEP</strong></label>
+                            <input type="text" class="form-contact-cep" name="CEP" id="CEP" placeholder="xxxxx-xx" onkeypress="mascara(this, '#####-###')" maxlength="9" required>
+                        </div>
+                        <div class="TEL">
+                            <label for="tel"><strong>Telefone</strong></label>
+                            <input type="tel" class="form-contact-tel" name="tel" id="tel" placeholder="xx xxxxx-xxxx"
+                            onkeypress="mascara(this, '## #####-####')" maxlength="13" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" class="form-contact-input" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="password"><strong>Senha</strong></label>
+                        <input type="password" class="form-contact-input" name="password" id="password" minlength="8" required>
+                    </div>
+                    <div class="campo">
+                        <label for="confirm_password"><strong>Confirme sua Senha</strong></label>
+                        <input type="password" class="form-contact-input" name="confirm_password" id="confirm_password" minlength="8" required>
+                    </div>
+                </fieldset>
+                <button class="botao" type="submit" onsubmit="" onclick='return validadata()'><a href="pagamento.html">Concluído</a></button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape-links">
+            <div class="margin-rodape">
+                <div class="rodape">
+                    <div class="imagem-rodape">
+                        <img src="imagens/localization.png" alt="Icone de Localização">
+                    </div>
+                    <div class="texto-rodape">
+                        <p>Localização</p>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <div class="imagem-rodape">
+                        <img src="imagens/telefone.png" alt="Icone de Localização">
+                    </div>
+                    <div class="texto-rodape">
+                        <p>Contato Telefônico</p>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <div class="imagem-rodape">
+                        <img src="imagens/email.png" alt="Icone de Localização">
+                    </div>
+                    <div class="texto-rodape">
+                        <p>Contato de e-mail</p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <a href="nossa_empresa.html">QUEM SOMOS</a>
+                <a href="fale_conosco.html">FALE CONOSCO</a>
+                <a href="faq.html">FAQ</a>
+                <div class="redes-sociais">
+                    <div class="icones-redes"><a href="https://www.facebook.com/Nexus-101529962161249" target="_blank" rel="external"><img src="imagens/facebook-icon.png" alt=""></a></div>
+                    <div class="icones-redes"><a href="https://www.instagram.com/nexusweb01/" target="_blank" rel="external"><img src="imagens/instagram-icon.png" alt=""></a></div>
+                    <div class="icones-redes"><a href="https://www.linkedin.com/company/nexus-plataforma-web" target="_blank" rel="external"><img src="imagens/linkedin-icon.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="acoes.js"></script>
+</body>
+</html>

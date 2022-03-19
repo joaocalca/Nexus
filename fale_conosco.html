@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="faleconosco.css">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <h1>Nexus</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nossa_empresa.html" target="_self" rel="next">Nossa Empresa</a></li>
+            <li><a href="projetos_valores.html" target="self" rel="next">Projetos e valores</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Contato</a>
+                <div class="dropdown-content">
+                  <a href="#">Fale Conosco</a>
+                  <a href="faq.html">FAQ</a>
+                </div>
+              </li>
+        </ul>
+    </header>
+    <main>
+        <div class="formulario">
+            <form class="form-help">
+                <h1>Fale Conosco</h1>
+                <fieldset>
+                    <div class="campo">
+                        <label for="name"><strong>Nome</strong></label>
+                        <input type="text" class="form-contact-help" name="name" id="name" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" class="form-contact-help" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone"><strong>Whatsapp</strong></label>
+                        <input type="tel" class="form-contact-tel" name="tel" id="tel" placeholder="xx xxxxx-xxxx"
+                        onkeypress="mascara(this, '## #####-####')" maxlength="13" required>
+                    </div>
+                    <div class="campo">
+                        <label for="msg"><strong>Mensagem</strong></label>
+                        <textarea class="form-contact-msg" name="msg" id="msg" rows="10" required></textarea>
+                    </div>
+                </fieldset>
+                <button class="botao" type="submit" onsubmit="">Concluído</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape-links">
+            <div class="margin-rodape">
+                <div class="rodape">
+                    <div class="imagem-rodape">
+                        <img src="imagens/localization.png" alt="Icone de Localização">
+                    </div>
+                    <div class="texto-rodape">
+                        <p>Localização</p>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <div class="imagem-rodape">
+                        <img src="imagens/telefone.png" alt="Icone de Localização">
+                    </div>
+                    <div class="texto-rodape">
+                        <p>Contato Telefônico</p>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <div class="imagem-rodape">
+                        <img src="imagens/email.png" alt="Icone de Localização">
+                    </div>
+                    <div class="texto-rodape">
+                        <p>Contato de e-mail</p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <a href="nossa_empresa.html">QUEM SOMOS</a>
+                <a href="fale_conosco.html">FALE CONOSCO</a>
+                <a href="faq.html">FAQ</a>
+                <div class="redes-sociais">
+                    <div class="icones-redes"><a href="https://www.facebook.com/Nexus-101529962161249" target="_blank" rel="external"><img src="imagens/facebook-icon.png" alt=""></a></div>
+                    <div class="icones-redes"><a href="https://www.instagram.com/nexusweb01/" target="_blank" rel="external"><img src="imagens/instagram-icon.png" alt=""></a></div>
+                    <div class="icones-redes"><a href="https://www.linkedin.com/company/nexus-plataforma-web" target="_blank" rel="external"><img src="imagens/linkedin-icon.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <p>Projeto desenvolvido por João Victor Calça &copy;</p>
+    </footer>
+    <script src="acoes.js"></script>
+</body>
+</html>
